@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== 全局 CSS 变量 ===== */
+:root {
+  --pink-primary: #f472b6;
+  --pink-light: #f9a8d4;
+  --pink-pale: #fce7f3;
+  --lavender-primary: #a78bfa;
+  --lavender-light: #c4b5fd;
+  --gold-primary: #fbbf24;
+  --gold-light: #fcd34d;
+  --bg-deep: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-elevated: #1a1a26;
+  --border-subtle: #242438;
+  --text-primary: #f1f1f6;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6b6b80;
+}
+
+/* ===== 滚动条美化 ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ===== 全局基础 ===== */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+}
+
+/* ===== 文字渐变工具类 ===== */
+@layer utilities {
+  .text-gradient-pink {
+    background: linear-gradient(135deg, #f472b6, #c084fc, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-gradient-card {
+    background: linear-gradient(145deg, #12121a 0%, #1a1a26 100%);
+  }
+  .bg-gradient-hero {
+    background: radial-gradient(ellipse at 50% 50%, rgba(244,114,182,0.08) 0%, rgba(10,10,15,0.95) 70%);
+  }
+}

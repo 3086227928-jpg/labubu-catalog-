@@ -1,0 +1,24 @@
+{
+  "name": "labubu-catalog",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Labubu 收藏图鉴 - 泡泡玛特玩偶展示站",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  }
+}

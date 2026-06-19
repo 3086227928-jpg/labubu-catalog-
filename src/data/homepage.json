@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "Labubu 收藏馆",
+    "subtitle": "探索泡泡玛特最可爱的精灵玩偶世界",
+    "ctaText": "探索图鉴",
+    "ctaLink": "/catalog"
+  },
+  "featuredSeries": ["exciting-macaron", "have-a-seat", "fall-in-wild", "coca-cola", "wings-of-fortune", "time-to-chill"],
+  "trendingFigureIds": ["em-001", "em-007", "has-001", "fiw-003", "cc-001", "wof-001", "has-003", "em-004"],
+  "stats": {
+    "totalSeries": 6,
+    "totalFigures": 45,
+    "secretFigures": 5,
+    "typeCount": 3
+  }
+}
